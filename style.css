@@ -1,0 +1,190 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+body { font-family: "Poppins", serif;
+    
+}
+h1 {
+    font-weight: 100; 
+    font-size: 50px;
+    font-style: normal;
+}
+h2 {
+    font-weight: 100;
+    font-style: normal;    
+    font-size: 32px;
+}
+#component {
+    height: 350px;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.slide-container {
+    height: 350px;
+    width: 200%;
+    display: flex;
+    transform: translateX(-25%);
+}
+.slide {
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    height: 100%;
+    width: 300px;
+    margin-inline: 5px;
+    padding: 0;
+    border-radius: 1rem;
+    min-width: 260px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.5s ease; 
+}
+.slide:hover .bottom-slide {
+    opacity: 1;
+}
+.top-slide {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+}
+.top-slide:hover {
+    opacity: 0;
+}
+.slide-title {
+    position: absolute;
+    font-family: "Poppins", serif;
+    font-weight: 200; 
+    color: aliceblue;
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 0;
+    line-height: 1.1;
+    top: 20px;
+    left: 20px;
+}
+.slide-image {
+    position: absolute;
+    top: 270px;
+    left: 20px;
+    width: 60%;
+}
+.bottom-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+.slide-title-underneath {
+    color: aliceblue;
+    margin-top: 20px;
+    margin-left: 20px;
+    position: absolute;
+    font-family: "Poppins", serif;
+    font-weight: 200; 
+    font-size: .8rem;
+    opacity: 0;
+}
+.slide-image-underneath {
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    width: 80%;
+    opacity: 0;
+}
+.slide-bullet-container {
+    position: absolute;
+    top: 140px;
+    left: 20px;
+    width: 80%;
+    opacity: 0;
+}
+.slide-bullets-underneath {
+    margin: 0;
+    padding: 3px;
+    font-size: 0.8rem;
+    color: aliceblue;
+    opacity: 0;
+}
+.slide-button-underneath {
+    position: absolute;
+    top: 280px;
+    left: 20px;
+    border: 0px solid aliceblue;
+    background-color: aliceblue;
+    color: black;
+    font-weight: 200;
+    border-radius: 2rem;
+    height: 40px;
+    width: 40%;
+    opacity: 0;
+}
+.slide-button-underneath:hover {
+    background-color: rgb(168, 169, 170);
+}
+.slide:hover .slide-title-underneath,
+.slide:hover .slide-button-underneath,
+.slide:hover .slide-bullets-underneath,
+.slide:hover .slide-bullet-container,
+.slide:hover .slide-image-underneath {
+    opacity: 1;
+}
+.fade-div {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 400px;
+    z-index: 1;
+    /* hover works on slides under */
+    pointer-events: none;
+}
+.fade-div-left {
+    left: 0px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));    
+}
+.fade-div-right {
+    right: 0px; 
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) );
+}
+.carousel-button {
+    color: white;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background: #181B34;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.carousel-button:hover {
+    border-color: aliceblue;
+    cursor: pointer;
+}
+.carousel-button-right {
+    right: 25px; 
+}
+.carousel-button-left {
+    left: 25px;
+
+}
