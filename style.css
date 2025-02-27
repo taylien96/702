@@ -28,14 +28,14 @@ h2 {
     height: 350px;
     width: 200%;
     display: flex;
-    transform: translateX(-25%);
+    transform: translateX(-22%);
 }
 .slide {
     justify-content: center;
     align-items: center;
     background-color: blue;
     height: 100%;
-    width: 300px;
+    width: 320px;
     margin-inline: 5px;
     padding: 0;
     border-radius: 1rem;
@@ -147,7 +147,7 @@ h2 {
     margin: 0;
     padding: 0;
     height: 100%;
-    width: 400px;
+    width: 200px;
     z-index: 1;
     /* hover works on slides under */
     pointer-events: none;

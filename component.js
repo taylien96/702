@@ -1,5 +1,5 @@
 let slides = [
-    {   title: "IT & Support",
+    {   title: "IT \n & Support",
         bullets: ["Recruitment Pipeline", "Engagement Survey", "HR Requests", "Onboarding & Offboarding"],
         imgSrc: "images/wm-outline.webp",
         color: "#FF596D"
@@ -9,17 +9,17 @@ let slides = [
         imgSrc: "images/wm-outline.webp",
         color: "#1F0F83"
     },
-    {   title: "Creative & Design",
+    {   title: "Creative \n & Design",
         bullets: ["Recruitment Pipeline", "Engagement Survey", "HR Requests", "Onboarding & Offboarding"],
         imgSrc: "images/wm-outline.webp",
         color: "#879AFF"
     },
-    {   title: "Product & Software",
+    {   title: "Product \n & Software",
         bullets: ["Recruitment Pipeline", "Engagement Survey", "HR Requests", "Onboarding & Offboarding"],
         imgSrc: "images/wm-outline.webp",
         color: "#00CA72"
     },
-    {   title: "HR & Recruiting",
+    {   title: "HR \n & Recruiting",
         bullets: ["Recruitment Pipeline", "Engagement Survey", "HR Requests", "Onboarding & Offboarding"],
         imgSrc: "images/wm-outline.webp",
         color: "#673971"
@@ -29,12 +29,12 @@ let slides = [
         imgSrc: "images/wm-outline.webp",
         color: "#879AFF"
     },
-    {   title: "Projects & Tasks",
+    {   title: "Projects \n & Tasks",
         bullets: ["Recruitment Pipeline", "Engagement Survey", "HR Requests", "Onboarding & Offboarding"],
         imgSrc: "images/wm-outline.webp",
         color: "#6161FF"
     },
-    {   title: "CRM & Sales",
+    {   title: "CRM \n & Sales",
         bullets: ["Recruitment Pipeline", "Engagement Survey", "HR Requests", "Onboarding & Offboarding"],
         imgSrc: "images/wm-outline.webp",
         color: "#24C4E6"
@@ -118,7 +118,7 @@ const carouselRight = () => {
     let slides = array.children;
     for (let index = 0; index < slides.length; index++) {
         slides[index].style.transition = "transform 0.5s ease";
-        slides[index].style.transform = "translateX(calc(200% + 17.5px))";
+        slides[index].style.transform = "translateX(calc(200% + 17.75px))";
     }
     setTimeout(() => {
         array.prepend(array.removeChild(array.lastElementChild));
@@ -140,7 +140,7 @@ const carouselLeft = () => {
     let slides = array.children;
     for (let index = 0; index < slides.length; index++) {
         slides[index].style.transition = "transform 0.5s ease";
-        slides[index].style.transform = "translateX(calc(-200% - 17.5px))";
+        slides[index].style.transform = "translateX(calc(-200% - 17.75px))";
     }
     setTimeout(() => {
         array.appendChild(array.removeChild(array.firstElementChild));
